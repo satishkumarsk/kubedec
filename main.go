@@ -1,7 +1,7 @@
 package main
 
 import (
-	"kubedec/cmd"
+	"github.com/satishkumarsk/kubedec/cmd"
 )
 
 func main() {

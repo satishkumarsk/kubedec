@@ -3,9 +3,11 @@ package cmd
 import (
 	"crypto/rand"
 	"fmt"
-	"kubedec/cryptoImpl"
-	"kubedec/utilities"
 	"os"
+
+	"github.com/satishkumarsk/kubedec/cryptoImpl"
+
+	"github.com/satishkumarsk/kubedec/utilities"
 
 	"github.com/spf13/cobra"
 )
