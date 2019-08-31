@@ -5,11 +5,12 @@ import (
 	"fmt"
 
 	certUtil "k8s.io/client-go/util/cert"
+	keyutil "k8s.io/client-go/util/keyutil"
 )
 
 func PrivatekeyParser(prvkey []byte) (*rsa.PrivateKey, error) {
 
-	key, err := certUtil.ParsePrivateKeyPEM(prvkey)
+	key, err := keyutil.ParsePrivateKeyPEM(prvkey)
 
 	if err != nil {
 
