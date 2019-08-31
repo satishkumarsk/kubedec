@@ -19,10 +19,11 @@ ZIP_ARCHIVE=current.zip
 
 linuxBuild: clean deps
 	GOOS=linux GOARCH=amd64 $(BUILD_CMD)
+install:
+	$(GOGET)
+        
 build:
 	$(BUILD_CMD)
-dist:
-	zip -j $(TARGET_DIR)/$(ZIP_ARCHIVE) $(TARGET_DIR)/$(BINARY_NAME) resources/docker/default-play.docker resources/builds/build_app.sh resources/sonar/* resources/k8s/*
 test:
 	$(TEST_CMD)
 coverage:

@@ -3,7 +3,7 @@ package cmd
 import (
 	"crypto/rand"
 	"fmt"
-	"kubedec/impl/cryptoImpl"
+	"kubedec/cryptoImpl"
 	"kubedec/utilities"
 	"os"
 
