@@ -15,13 +15,14 @@ GIT_BRANCH=$(shell git rev-parse --abbrev-ref HEAD)
 BUILD_CMD=$(GOBUILD) -o $(TARGET_DIR)/$(BINARY_NAME) -v
 TEST_CMD=$(GOTEST) -v ./...
 
-ZIP_ARCHIVE=current.zip
-
 linuxBuild: clean deps
 	GOOS=linux GOARCH=amd64 $(BUILD_CMD)
 install:
 	$(GOGET)
-        
+build_all:
+	for GOARCH in 386 amd64; do \
+		$(GOCMD) build -v -o $(TARGET_DIR)/kubedec-linux-$$GOARCH ; \
+    done;
 build:
 	$(BUILD_CMD)
 test:
