@@ -25,11 +25,11 @@ $ make install && make build
 ```
 Note: binary would be generated under target folder
 
-## Kubedec in action
+## Kubedec cli in action
 
 ![](kubedec.gif)
 
 ## How to use
 ```bash
-$ ./kubedec -k <fullpath/to/your/secretkey> -f </fullpath/to/your/sealedyaml>
+$ kubedec -k <fullpath/to/your/secretkey> -f </fullpath/to/your/sealedyaml>
  ```
