@@ -14,11 +14,17 @@ $ kubectl get secret -n kube-system sealed-secrets-key -o yaml >master.key
 ## NOTE: master key is the controller's public + private key and should be kept really safe!!!
 
  
+## Installation
+See https://github.com/satishkumarsk/kubedec/releases for the latest release and detailed installation instructions.
 
+
+## To build
 To build the `kubedec` and controller binaries, run:
 ```bash
 $ make install && make build
+binary would be generated under target 
 ```
+
 
 ## How to use
 ```bash
