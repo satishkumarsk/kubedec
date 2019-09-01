@@ -23,8 +23,13 @@ To build the `kubedec` and controller binaries, run:
 ```bash
 $ make install && make build
 ```
+<<<<<<< HEAD
 Note: binary would be generated under target folder
+=======
+## Kubedec in action
+>>>>>>> Add gif to  Readme
 
+![](kubedec.gif)
 
 ## How to use
 ```bash
