@@ -22,8 +22,8 @@ See https://github.com/satishkumarsk/kubedec/releases for the latest release and
 To build the `kubedec` and controller binaries, run:
 ```bash
 $ make install && make build
-binary would be generated under target 
 ```
+Note: binary would be generated under target folder
 
 
 ## How to use
