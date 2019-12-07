@@ -35,7 +35,8 @@ before_script:
 # failing test, we want to see both. Configure golangci-lint with a
 # .golangci.yml file at the top level of your repo.
 script:
-  - go test -v -race -coverprofile=coverage.txt -covermode=atomic ./...  # Run all the tests with the race detector enabled
+  - go test -v -race  ./...  # Run all the tests with the race detector enabled
+  - go test -v -race -coverprofile=coverage.txt -covermode=atomic ./cryptoImpl  # For code cov
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t 781e0b00-c714-4fd8-8aa5-9cbc70c1fafa
